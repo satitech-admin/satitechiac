@@ -1,0 +1,120 @@
+/* SATI TECH IAC — Ink & Ember design system.
+   Deep graphite, forest-charcoal, antique copper, warm parchment.
+   Brand direction deliberately excludes white/blue surfaces. */
+:root{
+  color-scheme:dark;
+  --ink:#f3e6cf;
+  --muted:#b3a999;
+  --blue:#dda66a;
+  --cyan:#bd8150;
+  --surface:#171c19;
+  --border:#404038;
+  --white:#202520;
+  --ember:#e5b578;
+  --background:#121613;
+  --muted-panel:#252b24;
+  --serif:Georgia,'Times New Roman',serif;
+}
+body{background:var(--background);color:var(--ink)}
+::selection{background:#ca8d4a;color:#101612}
+.nav{position:relative;z-index:12}
+.nav,.nav a{color:var(--ink)}
+.nav .links{color:#c4b9a6}
+.links a:hover,.footer a:hover{color:#efbb82}
+.brand small{color:#ab9b85}
+.mark{background:linear-gradient(135deg,#b8763e,#e6b77f 60%,#8f653e);color:#1b2019;box-shadow:0 6px 25px #a36c3b33;border:1px solid #ffcd9259}
+.btn{border-radius:12px;letter-spacing:.01em}
+.btn:hover{box-shadow:0 12px 30px #a979422e}
+.btn.primary,.primary{background:linear-gradient(120deg,#edbe81,#c8874f);color:#1b1c17}
+.btn.primary:hover{background:linear-gradient(120deg,#fbd09c,#e5a76e)}
+.btn.outline,.outline{background:#252921;color:#f1dfc4;border:1px solid #5d5648}
+.btn.light,.light{background:#403426;color:#efd1a7;color-scheme:dark}
+.menu-toggle{color:#e9d5b7;background:#252921;border-color:var(--border)}
+.hero-wrap{border-top:1px solid #393a30;background:radial-gradient(ellipse at 77% 22%,#62472b54 0,transparent 49%),radial-gradient(circle at 12% 84%,#33402d68 0,transparent 47%),linear-gradient(150deg,#161d18,#0d1210 75%)}
+.eyebrow,.section-label{color:#dfaf72}
+.dot{background:#dca564;box-shadow:0 0 0 5px #dca5641a}
+h1 em{color:#eabb81}
+.hero p,.sub,.card p,.feature p,.step p,.footer p{color:#bcb1a1}
+.photo-main{background-color:#322e26;filter:sepia(.43) saturate(.72) brightness(.76);box-shadow:0 25px 70px #0009}
+.photo-main:after{background:linear-gradient(0deg,#12181380,transparent 56%)}
+.float{background:#242921ef;border:1px solid #746044;color:#f4e4cc;box-shadow:0 14px 40px #0009;backdrop-filter:blur(12px)}
+.float span{color:#bdb09c}
+.iconbox{background:#453524;color:#efb879}
+.stats strong{color:#f3d19d}
+.stats span{color:#b5a996}
+section{background:transparent}
+.soft{background:#1b211b}
+.card,.plan,.feature,.step,.panel,.metric,.form-box{background:#222720;border-color:#3f4237;box-shadow:none}
+.card:hover{box-shadow:0 14px 48px #0006;border-color:#83633c}
+.card-content{background:#212720}
+.course-img{background-color:#392f27;filter:sepia(.4) saturate(.82) brightness(.82);position:relative}
+.card h3,.feature h3,.step h3{color:#f0dfc7}
+.card-bottom{border-color:#434236;color:#bdb09b}
+.card-bottom strong{color:#e9b474}
+.pill{background:#453827;color:#f2c796}
+.plan.featured{border-color:#d3a16b;box-shadow:0 18px 50px #120e083f}
+.price{color:#f0d0a6}
+.list li{color:#d0c4b2}
+.list li:before{color:#dbaf74}
+.feature .iconbox{background:#443624}
+.num{color:#9f7b55}
+.band{background:linear-gradient(110deg,#403221,#242b22);border:1px solid #8f704952}
+.band p{color:#d1c1a8}
+.footer{background:#0b100d;border-top:1px solid #3c3c32}
+.footer a,.footer p{color:#b3a792}
+.footer-bottom{border-color:#353a32;color:#a29989}
+.pagehead{background:radial-gradient(ellipse at 65% 25%,#52402b,transparent 60%),#1a201b}
+.pagehead h1{color:#efdbbd}
+.app-layout{background:#161c18}
+.sidebar{background:#0d1410;color:#ddd0b8;border-right:1px solid #393e33}
+.side-link{color:#b4aa96}
+.side-link:hover,.side-link.active{background:#554027;color:#ffe0b3}
+.main{color:#e9dec9}
+.muted{color:#ada390}
+.panel h3{color:#f1dcc1}
+.item{border-color:#403f35}
+.item small,.metric small{color:#b5aa98}
+.progress{background:#3b3e34}
+.progress span{background:linear-gradient(90deg,#c2874b,#efd097)}
+.role{background:#262c25;border-color:#4e483b;color:#d0c3ae}
+.role.active{background:#d9a465;border-color:#d9a465;color:#191b15}
+.tag{background:#293b2b;color:#a8d5a1}
+.field label{color:#ead7b9}
+.field input,.field select,.field textarea{background:#181f1a;color:#f5e8d4;border-color:#555044;color-scheme:dark}
+.field input::placeholder,.field textarea::placeholder{color:#958c7c}
+.notice{background:#3c3024;border-color:#756044;color:#ead3ae}
+.empty{background:#262b25;color:#b6ab95}
+#toast{background:#d9ae73;color:#181a15;box-shadow:0 15px 45px #0007}
+:focus-visible{outline-color:#eabc83!important}
+.about-grid img,.course-detail img{filter:sepia(.28) saturate(.8) brightness(.85)}
+.module-list li{background:#202820;border-color:#4d4739;color:#e3d5c1}
+.module-list li:before{color:#efb980}
+.faq-item{background:#22271f;border-color:#3f4036}
+.faq-item summary span{color:#e6b578}
+.faq-item p{color:#c0b39e;border-color:#474337}
+.notice a{color:#f7d59f;text-decoration:underline}
+.auth-card{width:min(950px,calc(100% - 32px));margin:45px auto 75px;display:grid;grid-template-columns:.92fr 1.08fr;border:1px solid #555043;border-radius:23px;overflow:hidden;box-shadow:0 35px 90px #0005}
+.auth-art{background:radial-gradient(circle at 25% 10%,#a66d39 0,transparent 45%),linear-gradient(140deg,#342f24,#1a2820);padding:40px;display:flex;flex-direction:column;justify-content:space-between;min-height:510px;position:relative}
+.auth-art:after{content:"";position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=950&q=85&auto=format&fit=crop') center/cover;opacity:.14;pointer-events:none;mix-blend-mode:luminosity}
+.auth-art>*{position:relative;z-index:1}
+.auth-art h2{font-size:clamp(32px,3.4vw,47px);line-height:1.2;margin:20px 0}
+.auth-art p{color:#e3cfb3;line-height:1.7}
+.auth-body{padding:35px 38px;background:#232920}
+.auth-tabs{display:flex;gap:8px;margin:0 0 26px}
+.auth-tabs a{padding:12px 18px;border:1px solid #655541;border-radius:10px;font-weight:700;font-size:13px}
+.auth-tabs a.active{background:#e1b174;color:#1a1d16;border-color:#e1b174}
+.auth-body .field{margin-bottom:15px}
+.auth-body .btn{width:100%}
+.account-notice{margin:14px 0 20px;border:1px solid #7d6243;border-radius:11px;padding:12px 13px;color:#e6c397;background:#3c3022;font-size:12px;line-height:1.6}
+.eye-toggle{padding:5px 9px;align-self:flex-end;border:0;background:transparent;color:#dcb582;font-size:12px}
+:disabled{opacity:.58;cursor:not-allowed}
+@media(max-width:950px){.links{gap:14px;font-size:12px}}
+@media(max-width:720px){
+.nav .links{background:#20251f;box-shadow:0 20px 45px #0009;border:1px solid #494335}
+.hero h1{font-size:clamp(39px,10vw,53px)}
+.auth-card{grid-template-columns:1fr;margin-top:20px}
+.auth-art{min-height:210px;padding:25px}
+.auth-art h2{font-size:29px;margin:15px 0}
+.auth-body{padding:24px}
+.band{padding:27px}
+}
