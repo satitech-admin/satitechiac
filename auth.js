@@ -12,7 +12,7 @@
       .then(mod=>mod.createClient(cfg.url,cfg.publishableKey,{auth:{autoRefreshToken:true,persistSession:true,detectSessionInUrl:true}}));
     return clientPromise;
   };
-  const escapeHTML=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;":"&#39;"}[c]));
+  const escapeHTML=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const alertMsg=msg=>{const el=document.querySelector("#toast");if(el){el.textContent=msg;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),4200)}};
   function field(label,html){return '<div class="field"><label>'+label+'</label>'+html+'</div>'}
   function authScreen(mode){
