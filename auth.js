@@ -27,7 +27,7 @@
       <form id="iac-auth" data-mode="${signup?"signup":"login"}">
       ${signup?field("Full name",'<input name="full_name" autocomplete="name" required minlength="2" maxlength="90" placeholder="Your full name">'):""}
       ${field("Email address",'<input name="email" type="email" autocomplete="email" required placeholder="you@example.com">')}
-      ${field("Password",'<input id="iac-password" name="password" type="password" autocomplete="${signup?"new-password":"current-password"}" required minlength="8" placeholder="Minimum 8 characters"><button type="button" class="eye-toggle" id="iac-password-toggle" aria-controls="iac-password">Show password</button>')}
+      ${field("Password",'<input id="iac-password" name="password" type="password" autocomplete="off" required minlength="8" placeholder="Minimum 8 characters"><button type="button" class="eye-toggle" id="iac-password-toggle" aria-controls="iac-password">Show password</button>')}
       ${signup?field("Learning interest",'<select name="interest"><option value="learning">12-month learning program</option><option value="mentorship">3-month optional project mentorship</option><option value="internship">Free internship opportunities</option></select>'):""}
       ${signup?'<p class="mini muted">Your account begins with standard student permissions. Trainer, partner and admin roles require independent authorization.</p>':""}
       <button class="btn primary" type="submit" ${connected?"":"disabled"}>${signup?"Create learner account →":"Secure sign in →"}</button>
