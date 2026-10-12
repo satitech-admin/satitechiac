@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: '22'
       - name: Validate frontend source and routes
-        run: node scripts/verify.mjs
+        run: node scripts/verify.mjs && node scripts/smoke.mjs
